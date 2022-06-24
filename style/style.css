@@ -1,0 +1,102 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content:center;
+}
+#container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: #359669 ;
+width: 550px;
+height: 300px;
+box-shadow: 2vw 1vw 4vw black;
+}
+#ItemBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom:4%;
+    background: linear-gradient(#4da27b,#359669) ;
+    width: 540px;
+    height:220px;
+
+}
+
+#Enter{
+    display: flex;
+    justify-content: space-around;
+    align-items:  center ;
+    background-color: transparent ;
+    width:100%;
+    height: 55px;
+
+}
+
+#AddItem{
+    height: 30px;
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+}
+
+#SortBy{
+    height: 30px; 
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+}
+
+#Item{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #e8f0fe;
+    box-shadow: 0vw 0vw 1vw #0d6efd;
+}
+
+#ListBox{
+    background-color:#8bb0b0;
+    width: 300px;
+    border-radius: 5px;
+}
+
+
+#List{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    width: 200px;
+    background: linear-gradient(#97b8b8,#359669);
+}
+
+#ListItem[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+}
+ .icon:checked ~.bi-x-circle-fill {
+    display: block;
+}
+.bi-x-circle-fill{
+ display: none;
+}
+
+ li:hover label +.bi-x-circle-fill{
+ display: block;
+}
+
+label{
+    margin: auto;
+}
+
+
+
+
+
